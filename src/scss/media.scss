@@ -1,0 +1,313 @@
+@use 'components/colors';
+
+@media (max-width: 1300px){
+    .hamburger{
+        display: none;
+    }
+    .dropdown-menu{
+        display: none;
+    }
+    .wrapper{
+        max-width: 1300px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+    }
+}
+
+@media (max-width: 1320px){
+    .wrapper {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 1024px){
+    .wrapper {
+        padding: 0 30px;
+    }
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-info{
+        font-size: 14px;
+    }
+    .hero-title{
+        max-width: 100%;
+        margin-bottom: 100px
+    }
+
+    .food-image{
+        max-width: 70%;
+    }
+    .hero-chicken_hell img{
+        width: 54px;
+        height: 51px;
+    }
+    .hero-chicken_hell {
+        transform: translate(100px, -160px);
+    }
+    .hero-graph {
+        transform: translate(-170px, 180px);
+    }
+    .img-container::before{
+        width: 70%;
+        height: 95%;
+        transform: translate(12px, -5px);
+    }
+    .hero-arrow{
+        transform: translate(100px, -60px);
+    }
+    .hero-decor-svg-top {
+        transform: translate(260px, -200px);
+    }
+
+    .hero-title h1{
+        font-size: 60px;
+    }
+    .hero-decor-svg-bottom {
+        position: absolute;
+        z-index: 3;
+        transform: translate(-300px, 290px);
+    }
+    .features{
+        margin-top: 200px;
+    }
+    .features-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features-border{
+        border-bottom: 1px solid #c5c5c5;
+        border-right: none;
+        padding-bottom: 15px;
+    }
+    .container-download{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-arrow {
+        transform: translate(-150px, -50px) rotate(110deg);
+        position: absolute;
+      }
+} 
+
+@media (max-width: 767px){
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    //HEADER
+    .nav-menu{
+        display: none;
+    }
+    .header-menu{
+        padding: 0 0 5px 0;
+    }
+    .hamburger-menu{
+        display: block;
+        position: relative;
+    }
+    .entrance{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-login{
+        padding: 12px 28px;
+    }
+    .btn-sign_up{
+        padding: 12px 19px;
+    }
+    .hamburger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25px;
+        width: 35px;
+        position: relative;
+        transform: translateX(-6px);
+      }
+      
+      .hamburger .line {
+        height: 3px;
+        background-color: colors.$color-purple;
+        width: 100%;
+        transition: all 0.3s ease;
+        display: flex;
+      
+      }
+      
+      /* Выпадающее меню скрыто по умолчанию */
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #2d3e50; /* Темно-синий фон */
+      }
+      
+      .dropdown-menu ul {
+        list-style: none;
+
+        animation: dropdown ease;
+        position: absolute;
+        z-index: 99;
+        background-color: #fff;
+        border: 1px solid #6c5fbc;
+        margin: 35px auto auto auto;
+        width: 1000%;
+        transform: translateX(-160px);
+      }
+      
+      .dropdown-menu ul li:nth-child(4){
+        border-bottom: none;
+      }
+      .dropdown-menu ul li {
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: #2d3e50 solid 1px;
+      }
+
+      .dropdown-menu ul li:active{
+        background-color: #5C4EAE;
+        color: white;
+      }
+    
+      /* Стили для анимации гамбургера в стрелку вниз */
+      .hamburger.active .line:nth-child(1) {
+        transform: rotate(55deg) translate(9px, 12px); /* Верхняя линия становится частью стрелки */
+      }
+      
+      .hamburger.active .line:nth-child(2) {
+        opacity: 0; /* Скрываем среднюю линию */
+      }
+      
+      .hamburger.active .line:nth-child(3) {
+        transform: rotate(-55deg) translate(15px, 8px); /* Нижняя линия становится частью стрелки */
+      }
+      
+      /* Анимация раскрытия меню */
+      .show {
+        display: block;
+        animation: dropdown .3s ease;
+        }
+      
+      @keyframes dropdown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+
+    //HERO
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-info{
+        font-size: 14px;
+    }
+    .hero-title{
+        max-width: 100%;
+        margin-bottom: 100px
+    }
+    .hero-title h1{
+        font-size: 42px;
+    }
+    .food-image{
+        max-width: 70%;
+    }
+    .hero-chicken_hell img{
+        width: 54px;
+        height: 51px;
+    }
+    .hero-chicken_hell{
+        transform: translate(-20px, -160px);
+    }
+    .hero-graph{
+        transform: translate(-30px, 180px);
+    }
+    .img-container::before{
+        width: 70%;
+        height: 95%;
+        transform: translate(12px, -5px);
+    }
+    .hero-arrow{
+        transform: translate(100px, -60px);
+    }
+    .hero-decor-svg-top{
+        transform: translate(140px, -200px);
+    }
+    .hero-decor-svg-bottom{
+        transform: translate(70px, 285px) rotate(-90deg);
+    }
+
+
+    //FEATURES
+
+    .features{
+        margin-top: 200px;
+    }
+    .features-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features-border{
+        border-bottom: 1px solid #c5c5c5;
+        border-right: none;
+        padding-bottom: 15px;
+    }
+
+
+    //MOBILE
+
+    .mobile{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        justify-content: baseline;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .mobile-phone{
+        width: 90%;
+    }
+    .mobile-title{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-title h1{
+        font-size: 38px;
+    }
+    .mobile-title li{
+        width: 90%;
+        margin: auto;
+    }
+    .btn-download{
+        display: inline-flex;
+        margin-top: 40px;
+    }
+    .mobile-arrow{
+        transform: translate(-240px, -15px) rotate(110deg);
+    }
+    .mobile-vector{
+        transform: translate(150px, 10px) rotate(180deg);
+    }
+}
