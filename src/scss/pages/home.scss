@@ -848,3 +848,308 @@
     width: 274px;
     height: 276px;
 }
+
+@media (max-width: 1024px){
+    .wrapper {
+        padding: 0 30px;
+    }
+
+    //HERO
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-info{
+        font-size: 14px;
+    }
+    .hero-title{
+        max-width: 100%;
+        margin-bottom: 100px
+    }
+
+    .food-image{
+        max-width: 70%;
+    }
+    .hero-chicken_hell img{
+        width: 54px;
+        height: 51px;
+    }
+    .hero-chicken_hell {
+        transform: translate(100px, -160px);
+    }
+    .hero-graph {
+        transform: translate(-170px, 180px);
+    }
+    .img-container::before{
+        width: 70%;
+        height: 95%;
+        transform: translate(12px, -5px);
+    }
+    .hero-arrow{
+        transform: translate(100px, -60px);
+    }
+    .hero-decor-svg-top {
+        transform: translate(260px, -200px);
+    }
+
+    .hero-title h1{
+        font-size: 60px;
+    }
+    .hero-decor-svg-bottom {
+        position: absolute;
+        z-index: 3;
+        transform: translate(-300px, 290px);
+    }
+    .features{
+        margin-top: 200px;
+    }
+    .features-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features-border{
+        border-bottom: 1px solid #c5c5c5;
+        border-right: none;
+        padding-bottom: 15px;
+    }
+    .container-download{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-arrow {
+        transform: translate(-150px, -50px) rotate(110deg);
+        position: absolute;
+      }
+} 
+
+@media (max-width: 767px){
+    .wrapper {
+        padding: 0 10px;
+    }
+    
+    //HERO
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-info{
+        font-size: 14px;
+    }
+    .hero-title{
+        max-width: 100%;
+        margin-bottom: 100px
+    }
+    .hero-title h1{
+        font-size: 42px;
+    }
+    .food-image{
+        max-width: 70%;
+    }
+    .hero-chicken_hell img{
+        width: 54px;
+        height: 51px;
+    }
+    .hero-chicken_hell{
+        transform: translate(-20px, -160px);
+    }
+    .hero-graph{
+        transform: translate(-30px, 180px);
+    }
+    .img-container::before{
+        width: 70%;
+        height: 95%;
+        transform: translate(12px, -5px);
+    }
+    .hero-arrow{
+        transform: translate(100px, -60px);
+    }
+    .hero-decor-svg-top{
+        transform: translate(140px, -200px);
+    }
+    .hero-decor-svg-bottom{
+        transform: translate(70px, 285px) rotate(-90deg);
+    }
+}
+
+
+
+@media (max-width: 1024px){
+    .wrapper {
+        padding: 0 30px;
+    }
+
+    //HERO
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-info{
+        font-size: 14px;
+    }
+    .hero-title{
+        max-width: 100%;
+        margin-bottom: 100px
+    }
+
+    .food-image{
+        max-width: 70%;
+    }
+    .hero-chicken_hell img{
+        width: 54px;
+        height: 51px;
+    }
+    .hero-chicken_hell {
+        transform: translate(100px, -160px);
+    }
+    .hero-graph {
+        transform: translate(-170px, 180px);
+    }
+    .img-container::before{
+        width: 70%;
+        height: 95%;
+        transform: translate(12px, -5px);
+    }
+    .hero-arrow{
+        transform: translate(100px, -60px);
+    }
+    .hero-decor-svg-top {
+        transform: translate(260px, -200px);
+    }
+
+    .hero-title h1{
+        font-size: 60px;
+    }
+    .hero-decor-svg-bottom {
+        position: absolute;
+        z-index: 3;
+        transform: translate(-300px, 290px);
+    }
+    .features{
+        margin-top: 200px;
+    }
+    .features-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features-border{
+        border-bottom: 1px solid #c5c5c5;
+        border-right: none;
+        padding-bottom: 15px;
+    }
+    .container-download{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-arrow {
+        transform: translate(-150px, -50px) rotate(110deg);
+        position: absolute;
+      }
+} 
+
+@media (max-width: 767px){
+    .wrapper {
+        padding: 0 10px;
+    }
+    
+
+    //HERO
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-info{
+        font-size: 14px;
+    }
+    .hero-title{
+        max-width: 100%;
+        margin-bottom: 100px
+    }
+    .hero-title h1{
+        font-size: 42px;
+    }
+    .food-image{
+        max-width: 70%;
+    }
+    .hero-chicken_hell img{
+        width: 54px;
+        height: 51px;
+    }
+    .hero-chicken_hell{
+        transform: translate(-20px, -160px);
+    }
+    .hero-graph{
+        transform: translate(-30px, 180px);
+    }
+    .img-container::before{
+        width: 70%;
+        height: 95%;
+        transform: translate(12px, -5px);
+    }
+    .hero-arrow{
+        transform: translate(100px, -60px);
+    }
+    .hero-decor-svg-top{
+        transform: translate(140px, -200px);
+    }
+    .hero-decor-svg-bottom{
+        transform: translate(70px, 285px) rotate(-90deg);
+    }
+
+
+    //FEATURES
+
+    .features{
+        margin-top: 200px;
+    }
+    .features-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features-border{
+        border-bottom: 1px solid #c5c5c5;
+        border-right: none;
+        padding-bottom: 15px;
+    }
+
+
+    //MOBILE
+
+    .mobile{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        justify-content: baseline;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .mobile-phone{
+        width: 90%;
+    }
+    .mobile-title{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-title h1{
+        font-size: 38px;
+    }
+    .mobile-title li{
+        width: 90%;
+        margin: auto;
+    }
+    .btn-download{
+        display: inline-flex;
+        margin-top: 40px;
+    }
+    .mobile-arrow{
+        transform: translate(-240px, -15px) rotate(110deg);
+    }
+    .mobile-vector{
+        transform: translate(150px, 10px) rotate(180deg);
+    }
+}
