@@ -27,7 +27,7 @@ function pages() {
         .pipe(include({
             includePaths: './src/components' // Путь для подключения компонентов
         }))
-        .pipe(gulp.dest('./dist')) // Сохраняем в папку dist
+        .pipe(gulp.dest('./dist/pages')) // Сохраняем в папку dist
         .pipe(browser.stream()); // Обновляем браузер
 }
 
