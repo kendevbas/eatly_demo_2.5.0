@@ -68,6 +68,10 @@ a:hover{
     cursor: url('./assets/icon/cursor-blue-hover.png'), auto;
 }
 
+a:link{
+    color: inherit;
+}
+
 a:visited{
     color: inherit;
 }
