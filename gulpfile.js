@@ -27,7 +27,7 @@ function pages() {
         .pipe(include({
             includePaths: './src/components' // Путь для подключения компонентов
         }))
-        .pipe(gulp.dest('./dist/pages')) // Сохраняем в папку dist
+        .pipe(gulp.dest('./dist')) // Сохраняем в папку dist
         .pipe(browser.stream()); // Обновляем браузер
 }
 
@@ -55,9 +55,12 @@ function watchSass() {
     gulp.watch('./src/scss/**/*.scss', build); // Наблюдение за изменениями SCSS файлов
     gulp.watch(['src/components/*.html', 'src/pages/*.html'], pages); // Наблюдение за изменениями HTML файлов
     gulp.watch('./src/js/*.js', minifyJs); // Наблюдение за изменениями JS файлов
-    gulp.watch('./**/*.html').on('change', browser.reload); // Перезагрузка при изменении HTML
-    gulp.watch('./**/*.css').on('change', browser.reload); // Перезагрузка при изменении CSS
-    gulp.watch('./**/*.js').on('change', browser.reload); // Перезагрузка при изменении JS
+    
+    //Второй вариант отслеживания изменений в файлах и обновление страницы, однако сколько раз прописывается "on('change', browser.reload)", столько раз страница и будет обновляться при запуске проекта и каждый раз при изменении любого файла
+    
+    // gulp.watch('./**/*.html').on('change', browser.reload); перезагрузка страницы при изменении любого html файлы
+    // gulp.watch('./**/*.css').on('change', browser.reload); перезагрузка страницы при изменении любого css файлы
+    // gulp.watch('./**/*.js').on('change', browser.reload); перезагрузка страницы при изменении любого js файлы
 }
 
 

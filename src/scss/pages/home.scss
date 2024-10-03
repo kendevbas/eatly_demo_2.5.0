@@ -69,6 +69,11 @@
     margin-top: 30px;
 }
 
+.hero-stars{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .btn-get_started{
     border-radius: 18px;
     padding: 18px 27px;
@@ -104,6 +109,7 @@
     align-items: center;
     gap:  10px;
     margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .trustpilot-text{
