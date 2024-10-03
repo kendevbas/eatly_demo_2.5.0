@@ -5,7 +5,7 @@ import sourcemaps from 'gulp-sourcemaps';
 import autoprefixer from 'gulp-autoprefixer';
 import terser from 'gulp-terser';
 import rename from 'gulp-rename';
-import htmlmin from 'gulp-htmlmin';
+import htmlmin from 'gulp-htmlmin'; 
 import browserSync from 'browser-sync';
 import gulpSass from 'gulp-sass';
 import dartSass from 'sass'; // Импортируем сам компилятор
