@@ -7,6 +7,7 @@ import terser from 'gulp-terser';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin'; 
 import browserSync from 'browser-sync';
+import gulpif from 'gulp-if'; // Импортируйте gulp-if здесь
 import gulpSass from 'gulp-sass';
 import dartSass from 'sass'; // Импортируем сам компилятор
 const sass = gulpSass(dartSass); // Устанавливаем компилятор
@@ -21,13 +22,17 @@ function moveImages() {
         .pipe(gulp.dest('./dist/assets/')); // перемещаем их в папку dist
 }
 
-// Функция для обработки HTML
+function isNotIndexHtml(file) {
+    return file.relative !== 'index.html';
+}
+
 function pages() {
     return gulp.src('./src/pages/*.html') // Обработка всех HTML-файлов
         .pipe(include({
             includePaths: './src/components' // Путь для подключения компонентов
         }))
-        .pipe(gulp.dest('./dist')) // Сохраняем в папку dist
+        .pipe(gulpif(isNotIndexHtml, gulp.dest('./dist/html_concat'))) // Сохраняем в папку dist, если это не index.html
+        .pipe(gulpif(file => file.relative === 'index.html', gulp.dest('./dist'))) // Сохраняем index.html в корень dist
         .pipe(browser.stream()); // Обновляем браузер
 }
 
@@ -44,7 +49,7 @@ function build(done) {
             cascade: false // Отключение каскадного стиля
         }))
         .pipe(sourcemaps.write('.clear/css_map')) // Указываем путь к папке с картами
-        .pipe(gulp.dest('./dist')) // Сохраняем скомпилированный CSS в папку dist
+        .pipe(gulp.dest('./dist/styles')) // Сохраняем скомпилированный CSS в папку dist
         .pipe(browser.stream()); // Обновляем браузер
 
     done();
@@ -104,7 +109,7 @@ export {
     moveImages
 };
 
-export const task = gulp.parallel(minifyHtml, minifyJs, build, pages, moveImages);
+export const task = gulp.series(pages, build, moveImages, minifyJs, minifyHtml);
 
 // Экспорт задачи по умолчанию, которая запускает все параллельно
-export default gulp.parallel(minifyHtml, minifyJs, build, pages, moveImages, watchSass, serve);
+export default gulp.series(pages, build, moveImages, minifyJs, minifyHtml, serve, watchSass);
