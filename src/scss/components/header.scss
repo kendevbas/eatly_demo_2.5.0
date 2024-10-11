@@ -186,7 +186,17 @@ li{
         background-color: #5C4EAE;
         color: white;
       }
+
+      .dropdown-menu ul li:nth-child(5){
+        background-color: #5C4EAE;
+        color: white;
+      }
       .dropdown-menu ul li:nth-child(6):active{
+        background-color: white;
+        color: #5C4EAE;
+      }
+
+      .dropdown-menu ul li:nth-child(5):active{
         background-color: white;
         color: #5C4EAE;
       }
