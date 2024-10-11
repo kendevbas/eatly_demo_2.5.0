@@ -1052,7 +1052,9 @@
         transform: translate(-20px, -160px);
     }
     .hero-graph{
-        transform: translate(-30px, 180px);
+        transform: translate(-70px, 200px);
+        width: 80%;
+
     }
     .img-container::before{
         width: 70%;
@@ -1060,7 +1062,11 @@
         transform: translate(12px, -5px);
     }
     .hero-arrow{
-        transform: translate(100px, -60px);
+        transform: translate(90px, -60px);
+        width: 30%;
+    }
+    .hero-decor{
+        transform: translateX(20px);
     }
     .hero-decor-svg-top{
         transform: translate(140px, -200px);
