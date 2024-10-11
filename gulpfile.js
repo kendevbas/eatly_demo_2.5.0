@@ -48,7 +48,7 @@ function build(done) {
             overrideBrowserslist: ['> 1%', 'last 2 versions', 'not dead'], // Поддержка старых браузеров
             cascade: false // Отключение каскадного стиля
         }))
-        .pipe(sourcemaps.write('.clear/css_map')) // Указываем путь к папке с картами
+        .pipe(sourcemaps.write('./css_map')) // Указываем путь к папке с картами
         .pipe(gulp.dest('./dist/styles')) // Сохраняем скомпилированный CSS в папку dist
         .pipe(browser.stream()); // Обновляем браузер
 
