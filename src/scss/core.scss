@@ -1,6 +1,6 @@
-@use 'components/colors';
-@use 'components/fonts';
-@use 'pages/header';
+@use 'design/colors';
+@use 'design/fonts';
+@use 'components/header';
 @use 'pages/home';
 @use 'pages/menu';
 @use 'pages/menu-restaurants';
@@ -11,7 +11,7 @@
 @use 'pages/sign-in';
 @use 'pages/sign-up';
 @use 'pages/forger-password.scss';
-@use 'pages/footer';
+@use 'components/footer';
 
 
 * {
