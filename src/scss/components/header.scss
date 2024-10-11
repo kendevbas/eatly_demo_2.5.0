@@ -111,16 +111,14 @@ li{
         display: none;
     }
     .header-menu{
-        padding: 0 0 5px 0;
+        padding: 15px 0 15px 0;
     }
     .hamburger-menu{
         display: block;
         position: relative;
     }
     .entrance{
-        order: 1;
-        display: flex;
-        flex-direction: column;
+      display: none;
     }
     .btn-login{
         padding: 12px 28px;
@@ -168,7 +166,7 @@ li{
         border: 1px solid #6c5fbc;
         margin: 35px auto auto auto;
         width: 1000%;
-        transform: translateX(-160px);
+        transform: translateX(-290px);
       }
       
       .dropdown-menu ul li:nth-child(4){
@@ -201,13 +199,13 @@ li{
       /* Анимация раскрытия меню */
       .show {
         display: block;
-        animation: dropdown .3s ease;
+        animation: dropdown .3s ease-in-out;
         }
       
       @keyframes dropdown {
         from {
           opacity: 0;
-          transform: translateY(-20px);
+          transform: translateX(40px);
         }
         to {
           opacity: 1;

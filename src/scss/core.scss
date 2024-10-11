@@ -31,7 +31,7 @@ html{
     line-height: 1.15;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    cursor: url('./assets/icon/cursor-blue.png'), auto;
+    cursor: url('../assets/icon/cursor-blue.png'), auto;
     scrollbar-width: 10px; /* Толщина полосы прокрутки: auto, thin или none */
     scrollbar-color: #6a5acd #ffffff00; /* Цвет ползунка и трека */
     background-color: #F9F9F9;
@@ -61,15 +61,19 @@ html{
 
 a{
     text-decoration: none;
-    cursor: url('./assets/icon/cursor-blue.png'), auto;
+    cursor: url('../assets/icon/cursor-blue.png'), auto;
 }
 
 a:hover{
-    cursor: url('./assets/icon/cursor-blue-hover.png'), auto;
+    cursor: url('../assets/icon/cursor-blue-hover.png'), auto;
 }
 
 a:link{
     color: inherit;
+}
+
+button:hover{
+    cursor: url('../assets/icon/cursor-blue-hover.png'), auto;
 }
 
 a:visited{
