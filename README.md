@@ -21,7 +21,7 @@
 
 ## Установка и запуск
 
-- git clone https://github.com/your-username/your-repo.git](https://github.com/kendevbas/eatly_demo_2.5.0.git
+- git clone https://github.com/kendevbas/eatly_demo_2.5.0.git
 - cd your-repo
 - npm i
 - gulp
