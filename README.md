@@ -1,10 +1,15 @@
-# Portfolio Project
-
-![Project Preview](https://sun9-60.userapi.com/impg/H7k-cl7dWcKhjIVOLlO8O_1wd2uLEnXlNCe55Q/YsdFOOHY2I4.jpg?size=1916x1030&quality=96&sign=f40dacfd9c7a8b89d44370d0829db547&type=album)
+![Project Preview](https://sun9-34.userapi.com/impg/JeqpWKLs6WK_vGdb7SuroLriLB5mF8Xyt2aMTw/I1EFAolfgwM.jpg?size=1916x930&quality=96&sign=fb0df4b21aadb2e9b4b8a0f6664507c8&type=album)
 
 ## О проекте
 
 Это персональный проект для демонстрации моих навыков в области фронтенд-разработки. В проекте использованы современные веб-технологии для создания интерактивного и отзывчивого интерфейса. Этот проект служит демонстрацией моей компетентности и стремления к совершенствованию навыков разработки веб-приложений.
+
+Технологии
+
+- HTML5 - семантическая разметка для улучшенной SEO и доступности.
+- CSS3/SCSS - стилизация с использованием миксинов, переменных и модульности.
+- JavaScript - динамическое поведение страницы, анимации и обработка событий.
+- Gulp - автоматизация задач для сборки проекта, минификации и обработки изображений.
 
 ## Функционал
 
@@ -14,8 +19,14 @@
 - Поддержка множества форматов изображений (JPEG, PNG, SVG).
 - Сборка и автоматизация задач с помощью Gulp.
 
-## Скриншоты
+## Установка и запуск
 
+- git clone https://github.com/your-username/your-repo.git
+- cd your-repo
+- npm i
+- gulp
+
+## Скриншоты проекта
 ![Скриншот 1](https://sun9-60.userapi.com/impg/H7k-cl7dWcKhjIVOLlO8O_1wd2uLEnXlNCe55Q/YsdFOOHY2I4.jpg?size=1916x1030&quality=96&sign=f40dacfd9c7a8b89d44370d0829db547&type=album)
 ![Скриншот 2](https://sun9-73.userapi.com/impg/HuySE4JDU49zfxxDUiWRLDJJgl7IQxntL7WeDA/jgvXeCCevYg.jpg?size=1916x793&quality=96&sign=8e9adc475f15e2e1ec891133be5909d4&type=album)
 ![Скриншот 3](https://sun9-18.userapi.com/impg/uNthLALqkEqZfxgE_4iLehqN4zrsIfUpAHSqzQ/4Oj7g9hzFSc.jpg?size=1916x782&quality=96&sign=d160f5b18ab8202b22fb3427bf283843&type=album)
